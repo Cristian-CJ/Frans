@@ -84,7 +84,7 @@ nav ul li a:hover{
   background-image: url(/shorts/duff.jpg);
 }
 .banner-bg-2{
-  background-image: url(/shorts/donuts.jpg);
+  background-image: url(img/stay-home.jpg);
 }
 
 .banner .contend{
@@ -100,9 +100,9 @@ nav ul li a:hover{
   font-size: 70px;
 }
 
-.banner button{
-  background-color: #000;
-  color: #fff;
+button{
+  background-color: #fff;
+  color: #000;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
@@ -110,6 +110,7 @@ nav ul li a:hover{
   border: 0px;
   width: 130px;
   height: 50px;
+  margin-top: 10px;
   border-radius: 25px;
 
 }
@@ -125,14 +126,15 @@ h3{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-section{
+section .trends{
+  width: 100%;
   padding: 40px 80px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns:repeat(3, 1fr) ;
 }
 
-section a{
+section .trends a{
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -140,11 +142,11 @@ section a{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section a h4{
+section .trends a h4{
   margin-top:20px ;
 }
 
-section a img{
+section .trends a img{
   width: 100%;
 }
 
@@ -188,9 +190,14 @@ section a img{
   width: 100%;
 }
 
+.border-a{
+  border-radius: 1px solid #000;
+}
+
 a{
   text-decoration: none;
   color: #000;
+  text-emphasis: none;
 }
 .thumbnail-slider .item .text-item{
   margin: 10px;
@@ -263,6 +270,54 @@ a{
 .flex-3 ol li a:hover{
   color: #000;
 }
+
+/*####################### MODELS ######################*/
+
+.models-grid{
+  margin: 50px 80px 100px 80px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+.float{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  color: #fff;
+}
+
+.model{
+  min-height: 500px;
+  background-color: #272727;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.model-1{
+  background-image: url(img/model-camilo2.png);
+  grid-row: span 2;
+}
+.model-2{
+  background-image: url(img/model-daniel.jpg);
+}
+.model-3{
+  background-image: url(img/anomaly-WWesmHEgXDs-unsplash.jpg);
+}
+.model-4{
+  background-image: url(img/10775.jpg);
+  grid-row: span 2;
+}
+.model-5{
+  background-image: url(img/4675.jpg);
+}
+.model-6{
+  background-image: url(img/5206.jpg);
+}
+
 
 /*################ footer ###############*/
 
